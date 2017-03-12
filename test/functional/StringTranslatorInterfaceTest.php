@@ -45,4 +45,18 @@ class StringTranslatorInterfaceTest extends TestCase
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
     }
+
+    /**
+     * Tests arg count and types for `translate()`.
+     *
+     * @since 0.1
+     */
+    public function testTranslate()
+    {
+        $subject = $this->createInstance();
+        $arg1 = 'apple';
+        $arg2 = 'strawberry';
+
+        $subject->translate($arg1, $arg2);
+    }
 }
