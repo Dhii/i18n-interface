@@ -44,6 +44,7 @@ class FormatTranslatorInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf('Dhii\\I18n\\TranslatorInterface', $subject, 'Subject does not implement required interface');
     }
 
     /**
