@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\I18n\Exception\FuncTest;
+namespace Dhii\I18n\Exception\FuncTest\Exception;
 
 use Xpmock\TestCase;
 
