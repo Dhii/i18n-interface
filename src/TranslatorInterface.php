@@ -2,6 +2,9 @@
 
 namespace Dhii\I18n;
 
+use Dhii\I18n\Exception\I18nExceptionInterface;
+use Dhii\I18n\Exception\TranslationExceptionInterface;
+
 /**
  * Something that can represent a translator, which can translate a subject.
  *
