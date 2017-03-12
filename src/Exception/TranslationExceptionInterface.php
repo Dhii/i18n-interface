@@ -2,7 +2,6 @@
 
 namespace Dhii\I18n\Exception;
 
-use Dhii\Util\String\StringableInterface as Stringable;
 use Dhii\I18n\TranslatorInterface;
 
 /**
@@ -17,7 +16,7 @@ interface TranslationExceptionInterface extends I18nExceptionInterface
      *
      * @since 0.1
      *
-     * @return string|Stringable The subject being translated.
+     * @return mixed The subject being translated.
      */
     public function getSubject();
 
@@ -29,22 +28,4 @@ interface TranslationExceptionInterface extends I18nExceptionInterface
      * @return TranslatorInterface The translator instance.
      */
     public function getTranslator();
-
-    /**
-     * The context of the string.
-     *
-     * @since 0.1
-     *
-     * @return mixed|null The context of the string, if any.
-     */
-    public function getContext();
-
-    /**
-     * Retrieves params used for placeholder substitution.
-     *
-     * @since 0.1
-     *
-     * @return array|null The array of params that is used, if any.
-     */
-    public function getParams();
 }

@@ -8,6 +8,9 @@ use Dhii\Data\ValueAwareInterface as Value;
 /**
  * Something that can act as a translator, which can translate a string format.
  *
+ * The {@see translate()} method throws a more specialized
+ * {@see Dhii\I18n\Exception\FormatTranslationExceptionInterface}.
+ *
  * @since 0.1
  */
 interface FormatTranslatorInterface extends TranslatorInterface

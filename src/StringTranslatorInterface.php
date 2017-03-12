@@ -8,6 +8,9 @@ use Dhii\Util\String\StringableInterface as Stringable;
 /**
  * Something that can act as a translator, which can translate whole strings.
  *
+ * The {@see translate()} method throws a more specialized
+ * {@see Dhii\I18n\Exception\StringTranslationExceptionInterface}.
+ *
  * @since 0.1
  */
 interface StringTranslatorInterface extends TranslatorInterface
