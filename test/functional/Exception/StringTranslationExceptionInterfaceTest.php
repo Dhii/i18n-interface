@@ -7,21 +7,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see Dhii\I18n\Exception\StringTranslationExceptionInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class StringTranslationExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\\I18n\\Exception\\StringTranslationExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return Dhii\I18n\Exception\StringTranslationExceptionInterface
      */
@@ -39,7 +39,7 @@ class StringTranslationExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

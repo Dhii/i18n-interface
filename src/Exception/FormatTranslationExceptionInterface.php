@@ -7,14 +7,14 @@ use ArrayAccess as Map;
 /**
  * Something that can represent an exception which occurs during or related to translation of string formats.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface FormatTranslationExceptionInterface extends TranslationExceptionInterface
 {
     /**
      * Retrieves params used for interpolation.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return array|Map|null The array of params used, if any.
      */
@@ -23,7 +23,7 @@ interface FormatTranslationExceptionInterface extends TranslationExceptionInterf
     /**
      * The context of the string.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return Value|null The context of the string, if any.
      */
