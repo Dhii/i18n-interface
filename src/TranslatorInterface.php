@@ -20,8 +20,8 @@ interface TranslatorInterface
      *
      * @since [*next-version*]
      *
-     * @param string|Stringable $string The string to translate.
-     * @param array|ArrayAccess|null $params A map of values to use for placeholder substitution, if any.
+     * @param string|Stringable               $string  The string to translate.
+     * @param array|ArrayAccess|null          $params  A map of values to use for placeholder substitution, if any.
      * @param string|ValueAwareInterface|null $context A context for the string, if any.
      *
      * @return string The translated string, possibly with placeholders substituted.

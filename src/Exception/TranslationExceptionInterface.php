@@ -31,7 +31,7 @@ interface TranslationExceptionInterface extends I18nExceptionInterface
     public function getTranslator();
 
     /**
-     * The context of the string
+     * The context of the string.
      *
      * @since [*next-version*]
      *
