@@ -9,7 +9,7 @@ use Dhii\Data\ValueAwareInterface;
 /**
  * Something that can act as a string translator.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface TranslatorInterface
 {
@@ -18,7 +18,7 @@ interface TranslatorInterface
      *
      * If values are given, MUST attempt to use them for substituting placeholders in the string.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|Stringable               $string  The string to translate.
      * @param array|ArrayAccess|null          $params  A map of values to use for placeholder substitution, if any.

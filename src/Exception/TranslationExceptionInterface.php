@@ -8,14 +8,14 @@ use Dhii\I18n\TranslatorInterface;
 /**
  * Something that can represent an exception which occurs during or related to translation.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface TranslationExceptionInterface extends I18nExceptionInterface
 {
     /**
      * Retrieves the subject which is being translated.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string|Stringable The subject being translated.
      */
@@ -24,7 +24,7 @@ interface TranslationExceptionInterface extends I18nExceptionInterface
     /**
      * Retrieves the translator doing the translation.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return TranslatorInterface The translator instance.
      */
@@ -33,7 +33,7 @@ interface TranslationExceptionInterface extends I18nExceptionInterface
     /**
      * The context of the string.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return mixed|null The context of the string, if any.
      */
@@ -42,7 +42,7 @@ interface TranslationExceptionInterface extends I18nExceptionInterface
     /**
      * Retrieves params used for placeholder substitution.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return array|null The array of params that is used, if any.
      */
