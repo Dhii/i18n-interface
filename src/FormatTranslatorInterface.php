@@ -2,7 +2,6 @@
 
 namespace Dhii\I18n;
 
-use ArrayAccess as Map;
 use Dhii\Data\ValueAwareInterface as Value;
 
 /**
@@ -23,7 +22,7 @@ interface FormatTranslatorInterface extends TranslatorInterface
      * @since 0.1
      *
      * @param string|Stringable $format  The string format to translate
-     * @param array|Map|null    $params  A map of values to use for placeholder substitution, if any.
+     * @param array|null        $params  A map of values to use for placeholder substitution, if any.
      * @param string|Value|null $context A context for the string, if any.
      *
      * @return string The translated string, with placeholders interpolated.
