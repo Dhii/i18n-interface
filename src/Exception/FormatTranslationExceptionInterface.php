@@ -2,8 +2,6 @@
 
 namespace Dhii\I18n\Exception;
 
-use ArrayAccess as Map;
-
 /**
  * Something that can represent an exception which occurs during or related to translation of string formats.
  *
@@ -16,7 +14,7 @@ interface FormatTranslationExceptionInterface extends TranslationExceptionInterf
      *
      * @since 0.1
      *
-     * @return array|Map|null The array of params used, if any.
+     * @return array|null The array of params used, if any.
      */
     public function getParams();
 
