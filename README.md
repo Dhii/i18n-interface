@@ -6,7 +6,7 @@
 
 Interfaces for internationalization.
 
-This package complies with [Dhii] standards
+This package complies with [Dhii] standards.
 
 
 [Dhii]:                     https://github.com/Dhii/dhii
