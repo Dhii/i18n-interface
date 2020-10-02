@@ -2,21 +2,22 @@
 
 namespace Dhii\I18n\Exception;
 
-use Dhii\Data\ValueAwareInterface as Value;
-
 /**
  * Something that can represent an exception which occurs during or related to translation of strings.
- *
- * @since 0.1
  */
-interface StringTranslationExceptionInterface extends TranslationExceptionInterface
+interface StringTranslationExceptionInterface
 {
     /**
-     * The context of the string.
+     * Retrieve the context of subject translation.
      *
-     * @since 0.1
-     *
-     * @return Value|null The context of the string, if any.
+     * @return string|null The context of the string, if any.
      */
     public function getContext();
+
+    /**
+     * Retrieve the subject that was being translated.
+     *
+     * @return string The subject of translation
+     */
+    public function getSubject(): string;
 }
