@@ -2,6 +2,7 @@
 
 namespace Dhii\I18n\Test\Func;
 
+use Dhii\I18n\StringTranslatorInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Dhii\I18n\StringTranslatorInterface as Subject;

@@ -2,18 +2,23 @@
 
 namespace Dhii\I18n;
 
+use Dhii\I18n\Exception\StringTranslationExceptionInterface;
+
 /**
- * Something that can act as a translator, which can translate whole strings.
+ * Something that can represent a translator, which can translate a subject.
  */
 interface StringTranslatorInterface
 {
     /**
-     * Translates a string with context.
+     * Translates a string.
      *
-     * @param string $string  The string to translate.
-     * @param string $context A context for the string, if any.
+     * Retrieves a translation string that corresponds to the subject string.
      *
-     * @return string The translated string.
+     * @param string $subject The subject to translate.
+     *
+     * @throws StringTranslationExceptionInterface If could not translate string.
+     *
+     * @return mixed The translated subject.
      */
-    public function translate(string $string, string $context = null);
+    public function translate(string $subject): string;
 }

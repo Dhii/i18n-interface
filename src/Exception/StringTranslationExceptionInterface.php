@@ -1,23 +1,19 @@
 <?php
 
+
 namespace Dhii\I18n\Exception;
 
+use Throwable;
+
 /**
- * Something that can represent an exception which occurs during or related to translation of strings.
+ * Represents an exception thrown during string translation.
  */
-interface StringTranslationExceptionInterface
+interface StringTranslationExceptionInterface extends Throwable
 {
     /**
-     * Retrieve the context of subject translation.
+     * Retrieves the string that was being translated.
      *
-     * @return string|null The context of the string, if any.
-     */
-    public function getContext();
-
-    /**
-     * Retrieve the subject that was being translated.
-     *
-     * @return string The subject of translation
+     * @return string The string that was being translated.
      */
     public function getSubject(): string;
 }

@@ -2,10 +2,12 @@
 
 namespace Dhii\I18n;
 
+use Dhii\I18n\Exception\FormatTranslationExceptionInterface;
+
 /**
  * Something that can act as a translator, which can translate a string format
  */
-interface FormatTranslatorInterface
+interface FormatTranslatorInterface extends StringTranslatorInterface
 {
     /**
      * Translates a string with context, interpolating parameters into the string.
@@ -16,7 +18,9 @@ interface FormatTranslatorInterface
      * @param array|null  $params  A map of values to use for placeholder substitution, if any.
      * @param string|null $context A context for the string, if any.
      *
+     * @throws FormatTranslationExceptionInterface If problem translating.
+     *
      * @return string The translated string, with placeholders interpolated.
      */
-    public function translate(string $format, array $params = null, string $context = null);
+    public function translate(string $format, array $params = null, string $context = null): string;
 }
