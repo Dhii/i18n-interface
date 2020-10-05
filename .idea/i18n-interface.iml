@@ -5,7 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Dhii\I18n\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/tests/functional" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/stub" isTestSource="true" packagePrefix="Dhii\I18n\Test\Stub\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/functional" isTestSource="true" packagePrefix="Dhii\I18n\Test\Func\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/amphp/amp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/amphp/byte-stream" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />

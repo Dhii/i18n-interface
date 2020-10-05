@@ -25,7 +25,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\I18n\\Test\\Func\\": "src/"
+            "Dhii\\I18n\\Test\\Func\\": "tests/functional",
+            "Dhii\\I18n\\Test\\Stub\\": "tests/stub"
         }
     },
     "extra": {
