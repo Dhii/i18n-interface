@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpTestFrameworkVersionCache">
+    <tools_cache>
+      <tool tool_name="PHPUnit">
+        <cache>
+          <versions>
+            <info id="interpreter-09f57054-86d5-4fec-9c5b-7e71d67f1b52" version="6.5.14" />
+            <info id="interpreter-220d9512-4efa-4102-8d81-d49f9515421d" version="7.5.20" />
+          </versions>
+        </cache>
+      </tool>
+    </tools_cache>
+  </component>
+</project>

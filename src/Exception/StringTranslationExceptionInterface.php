@@ -1,22 +1,19 @@
 <?php
 
+
 namespace Dhii\I18n\Exception;
 
-use Dhii\Data\ValueAwareInterface as Value;
+use Throwable;
 
 /**
- * Something that can represent an exception which occurs during or related to translation of strings.
- *
- * @since 0.1
+ * Represents an exception thrown during string translation.
  */
-interface StringTranslationExceptionInterface extends TranslationExceptionInterface
+interface StringTranslationExceptionInterface extends Throwable
 {
     /**
-     * The context of the string.
+     * Retrieves the string that was being translated.
      *
-     * @since 0.1
-     *
-     * @return Value|null The context of the string, if any.
+     * @return string The string that was being translated.
      */
-    public function getContext();
+    public function getSubject(): string;
 }

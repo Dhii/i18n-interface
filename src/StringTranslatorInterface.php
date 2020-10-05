@@ -2,28 +2,23 @@
 
 namespace Dhii\I18n;
 
-use Dhii\Data\ValueAwareInterface as Value;
-use Dhii\Util\String\StringableInterface as Stringable;
+use Dhii\I18n\Exception\StringTranslationExceptionInterface;
 
 /**
- * Something that can act as a translator, which can translate whole strings.
- *
- * The {@see translate()} method throws a more specialized
- * {@see Dhii\I18n\Exception\StringTranslationExceptionInterface}.
- *
- * @since 0.1
+ * Something that can represent a translator, which can translate a subject.
  */
-interface StringTranslatorInterface extends TranslatorInterface
+interface StringTranslatorInterface
 {
     /**
-     * {@inheritdoc}
+     * Translates a string.
      *
-     * @since 0.1
+     * Retrieves a translation string that corresponds to the subject string.
      *
-     * @param string|Stringable $string  The string to translate.
-     * @param string|Value|null $context A context for the string, if any.
+     * @param string $subject The subject to translate.
      *
-     * @return string The translated string.
+     * @throws StringTranslationExceptionInterface If could not translate string.
+     *
+     * @return mixed The translated subject.
      */
-    public function translate($string, $context = null);
+    public function translate(string $subject): string;
 }
