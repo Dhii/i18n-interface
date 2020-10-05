@@ -14,13 +14,13 @@ interface FormatTranslatorInterface extends StringTranslatorInterface
      *
      * If values are given, MUST attempt to use them for interpolating placeholders in the string.
      *
-     * @param string      $format  The string format to translate
+     * @param string      $subject The string format to translate
      * @param array|null  $params  A map of values to use for placeholder substitution, if any.
      * @param string|null $context A context for the string, if any.
      *
-     * @throws FormatTranslationExceptionInterface If problem translating.
-     *
      * @return string The translated string, with placeholders interpolated.
+     *@throws FormatTranslationExceptionInterface If problem translating.
+     *
      */
-    public function translate(string $format, array $params = null, string $context = null): string;
+    public function translate(string $subject, array $params = null, string $context = null): string;
 }
