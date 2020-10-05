@@ -2188,12 +2188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "740684135cf9729849c2516049a61696f8fdd3ae"
+                "reference": "cf2fce8705367b64aa8e810cfa49d9055cff45d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/740684135cf9729849c2516049a61696f8fdd3ae",
-                "reference": "740684135cf9729849c2516049a61696f8fdd3ae",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/cf2fce8705367b64aa8e810cfa49d9055cff45d2",
+                "reference": "cf2fce8705367b64aa8e810cfa49d9055cff45d2",
                 "shasum": ""
             },
             "require": {
@@ -2205,11 +2205,11 @@
             "require-dev": {
                 "phing/phing": "2.16.3",
                 "php-parallel-lint/php-parallel-lint": "1.2.0",
-                "phpstan/phpstan": "0.12.40",
+                "phpstan/phpstan": "0.12.48",
                 "phpstan/phpstan-deprecation-rules": "0.12.5",
                 "phpstan/phpstan-phpunit": "0.12.16",
                 "phpstan/phpstan-strict-rules": "0.12.5",
-                "phpunit/phpunit": "7.5.20|8.5.5|9.3.8"
+                "phpunit/phpunit": "7.5.20|8.5.5|9.4.0"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
@@ -2237,7 +2237,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-18T12:01:20+00:00"
+            "time": "2020-10-05T12:32:23+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
