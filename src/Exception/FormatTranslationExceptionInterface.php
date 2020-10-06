@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\I18n\Exception;
 
 /**
@@ -12,5 +14,5 @@ interface FormatTranslationExceptionInterface extends ContextStringTranslationEx
      *
      * @return array|null The array of params used, if any.
      */
-    public function getParams();
+    public function getParams(): ?array;
 }

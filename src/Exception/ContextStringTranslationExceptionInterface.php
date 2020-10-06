@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\I18n\Exception;
 
 /**
@@ -12,5 +14,5 @@ interface ContextStringTranslationExceptionInterface extends StringTranslationEx
      *
      * @return string|null The context of the string, if any.
      */
-    public function getContext();
+    public function getContext(): ?string;
 }

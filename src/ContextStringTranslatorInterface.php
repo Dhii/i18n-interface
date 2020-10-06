@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\I18n;
 
 use Dhii\I18n\Exception\ContextStringTranslationExceptionInterface;
