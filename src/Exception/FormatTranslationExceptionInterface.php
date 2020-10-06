@@ -12,7 +12,8 @@ interface FormatTranslationExceptionInterface extends ContextStringTranslationEx
     /**
      * Retrieves params used for interpolation.
      *
-     * @return array|null The array of params used, if any.
+     * @return string[]|null The array of params used, if any.
+     * @psalm-return array<positive-int, scalar>|null
      */
     public function getParams(): ?array;
 }
