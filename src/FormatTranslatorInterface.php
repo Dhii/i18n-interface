@@ -24,5 +24,5 @@ interface FormatTranslatorInterface extends StringTranslatorInterface
      * @return string The translated string, with placeholders interpolated.
      * @throws FormatTranslationExceptionInterface If problem translating.
      */
-    public function translate(string $subject, array $params = null, string $context = null): string;
+    public function translate(string $subject, ?array $params = null, ?string $context = null): string;
 }

@@ -19,11 +19,11 @@ interface ContextStringTranslatorInterface extends StringTranslatorInterface
      * same context.
      *
      * @param string $subject The string to translate.
-     * @param string $context A context for the string, if any.
+     * @param string|null $context A context for the string, if any.
      *
      * @return string The translated string.
-     *@throws ContextStringTranslationExceptionInterface If problem translated.
+     * @throws ContextStringTranslationExceptionInterface If problem translated.
      *
      */
-    public function translate(string $subject, string $context = null): string;
+    public function translate(string $subject, ?string $context = null): string;
 }
