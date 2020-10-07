@@ -1,11 +1,12 @@
 ## Dhii - Internationalization Interface
 ![Continuous Integration](https://github.com/Dhii/i18n-interface/workflows/Continuous%20Integration/badge.svg?branch=develop)
 [![Latest Stable Version](https://poser.pugx.org/dhii/i18n-interface/version)](https://packagist.org/packages/dhii/i18n-interface)
+[![Latest Unstable Version](https://poser.pugx.org/dhii/i18n-interface/v/unstable)](//packagist.org/packages/dhii/i18n-interface)
 
 Interfaces for internationalization.
 
 ## Details
-When using a technology like the [gettext][] PHP implementaiton to internationalize strings in PHP code,
+When using a technology like the [gettext][] PHP implementation to internationalize strings in PHP code,
 one often comes across several problems:
 
 1. The implementation is written in procedural style.
@@ -25,6 +26,10 @@ Finally, it defines a standard for a simple translator that just retrieves a str
 for another string. This means that consumers to which context or token interpolation
 are irrelevant don't have to depend on an API that they don't use, increasing [ISP][].
 
+## Implementations
+- [`wp-oop/wp-i18n`][] - I18n for WordPress. No more coupling and annoying text domain everywhere!
+
 
 [gettext]: https://www.gnu.org/software/gettext/
 [ISP]: https://en.wikipedia.org/wiki/Interface_segregation_principle
+[`wp-oop/wp-i18n`]: https://github.com/wp-oop/wp-i18n
